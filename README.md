@@ -20,4 +20,4 @@ Usefull , basic and effective markdown editor.
 
 #Lisance#
 
-I haven't lisance :/
+I haven't licence :/
