@@ -1,0 +1,77 @@
+/*
+ * Color Definations
+*/
+::-webkit-scrollbar {
+  width: 15px; }
+
+::-webkit-scrollbar-track {
+  background-color: #507192;
+  border-left: 2px solid #2c3e50; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #2c3e50;
+  -webkit-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease; }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #3e5771; }
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body, html {
+  background-color: #f4f5f6;
+  height: 100%; }
+
+header {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  background-color: #2c3e50;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000; }
+  header h1 {
+    font-size: 50px;
+    line-height: 100px;
+    color: #ecf0f1; }
+  header .me {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    height: 30px;
+    width: auto; }
+    header .me i {
+      font-size: 30px !important;
+      line-height: 30px !important;
+      color: #ecf0f1;
+      padding: 0 10px; }
+
+#content {
+  padding-top: 100px;
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+  z-index: 100; }
+
+aside {
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  padding: 10px;
+  background: #d9dcde; }
+
+main {
+  float: left;
+  padding-left: 30%;
+  width: 100%; }
+  main .editor {
+    width: 100%;
+    padding: 20px; }
+
+/*# sourceMappingURL=previewSkeleton.css.map */

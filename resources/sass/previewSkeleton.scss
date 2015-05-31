@@ -1,0 +1,82 @@
+@import "source/variables";
+@import "source/mixin";
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background-color: lighten($midnightBlue, 20);
+  border-left: 2px solid $midnightBlue;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $midnightBlue;
+  @include transition(all .7s ease);
+  &:hover{
+    background-color: lighten($midnightBlue, 10);
+  }
+}
+
+*{// ---------------------------- Default Font
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html{
+  background-color: lighten($silver, 20);
+  height: 100%;
+}
+
+header{
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  background-color: $midnightBlue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  h1{
+    font-size: 50px;
+    line-height: 100px;
+    color: $clouds;
+  }
+  .me{
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    height: 30px;
+    width: auto;
+    i{
+      font-size: 30px !important;
+      line-height: 30px !important;
+      color: $clouds;
+      padding: 0 10px;
+    }
+  }
+}
+
+#content{
+  padding-top: 100px;
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+  z-index: 100;
+
+}
+aside{
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  padding: 10px;
+  background: lighten($silver, 10);
+}
+main{
+  float: left;
+  padding-left: 30%;
+  width: 100%;
+  .editor{
+    width: 100%;
+    padding: 20px;
+  }
+}

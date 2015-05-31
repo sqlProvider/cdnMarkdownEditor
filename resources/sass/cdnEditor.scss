@@ -1,0 +1,64 @@
+@import 'source/variables';
+@import 'source/mixin';
+
+// Editor Config
+$editorWidth : 96%;
+$editorMargin : 2%;
+$editorToolsHeigth : 50px;
+
+// Editor
+.cdnEditor{
+  width: $editorWidth;
+  margin: $editorMargin;
+  padding-top: 30px;
+  height: auto;
+  textarea{
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    background: darken($midnightBlue, 10);
+    border: none;
+    color: $clouds;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    &:focus{
+      outline: 0;
+    }
+  }
+  .toolsBar{
+    width: 100%;
+    height: $editorToolsHeigth;
+    background: $midnightBlue;
+    padding: 0 $editorToolsHeigth / 3 / 2;
+    .tool{
+      float: left;
+      height: $editorToolsHeigth / 3 * 2;
+      line-height: $editorToolsHeigth / 3 * 2;
+      width: $editorToolsHeigth / 3 * 2;
+      margin: $editorToolsHeigth / 3 / 2 5px;
+      border-radius: 0px;
+      cursor: pointer;
+      text-align: center;
+      color: $clouds;
+      font-size: 14px;
+      font-weight: 600;
+      i{
+        font-size: 18px;
+      }
+      // Hover Animation
+      @include transition(all .7s ease);
+      &:hover{
+        border-radius: $editorToolsHeigth / 3 * 2;
+        background: lighten($midnightBlue, 20);
+      }
+    }
+    .divider{
+      height: $editorToolsHeigth;
+      width: 1px;
+      float: left;
+      border-left: 1px solid lighten($midnightBlue, 10);
+    }
+  }
+}
