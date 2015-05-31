@@ -18,6 +18,6 @@ Usefull , basic and effective markdown editor.
 ##Good Luck##
  **This README.md write in CDN Markdown Editor** 
 
-#Lisance#
+#Licence#
 
 I haven't licence :/
